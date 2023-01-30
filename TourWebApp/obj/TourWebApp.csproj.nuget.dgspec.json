@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\TourWebApp\\TourWebApp\\TourWebApp.csproj": {}
+    "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\TourWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\TourWebApp\\TourWebApp\\TourWebApp.csproj": {
+    "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\TourWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\TourWebApp\\TourWebApp\\TourWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\TourWebApp.csproj",
         "projectName": "TourWebApp",
-        "projectPath": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\TourWebApp\\TourWebApp\\TourWebApp.csproj",
+        "projectPath": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\TourWebApp.csproj",
         "packagesPath": "C:\\Users\\Jason Asare\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\TourWebApp\\TourWebApp\\obj\\",
+        "outputPath": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jason Asare\\AppData\\Roaming\\NuGet\\NuGet.Config",

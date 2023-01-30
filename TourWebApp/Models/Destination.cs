@@ -6,9 +6,11 @@ namespace TourWebApp.Models
     public class Destination
     {
         [Key]
-        public int Id { get; set; }
+        [DisplayName("Destination ID")]
+        public Guid DestinationId { get; set; }
 
         [DisplayName("Specific Destination")]
+        [Required]
         public string DestinationName { get; set; }
 
         [DisplayName("Destination Country")]

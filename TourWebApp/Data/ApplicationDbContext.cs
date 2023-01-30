@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TourWebApp.Models;
 
 namespace TourWebApp.Data
 {
@@ -9,5 +10,7 @@ namespace TourWebApp.Data
             : base(options)
         {
         }
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Destination> Destinations { get; set; }
     }
 }
