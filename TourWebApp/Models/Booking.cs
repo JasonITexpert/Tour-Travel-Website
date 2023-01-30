@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TourWebApp.Models
 {
-    public class Bookings
+    public class Booking
     {
         [Key]
         [DisplayName("Booking ID")]
