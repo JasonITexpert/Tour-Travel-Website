@@ -51,6 +51,12 @@ a {
     color: inherit;
 }
 
+    a:active {
+        color: none;
+        text-decoration: none;
+    }
+
+
     a:visited {
         text-decoration: none;
         color: none;
@@ -59,11 +65,6 @@ a {
     a:hover {
         text-decoration: none;
         color: inherit;
-    }
-
-    a:active {
-        color: none;
-        text-decoration: none;
     }
 
     a:link {
@@ -221,11 +222,8 @@ a {
 }
 
 .login-section {
-    font-family: sans-serif;
+    font-family: sans-serif, Arial;
     display:flex;
-    justify-content:space-evenly;
-    height:100%;
-    width:100%;
 }
 
 .login-h2 {
@@ -254,37 +252,42 @@ a {
 .login-btn {
     padding: 0.5rem 8.7rem;
     border: 1px solid white;
-    border-radius: 0.25rem;
+    border-radius: 0.6rem;
     color: white;
     background-color: #FA7436;
     margin-bottom: 1rem;
 }
 
 .login-left {
-    margin-right: auto auto;
-    padding: 5%;
-    width:50%;
+    margin: 4rem auto 4rem 10rem;
+    width: 70rem;
+    height: 100%;
 }
 
 .login-right {
-    height: 10rem;
-    width: 10rem;
-    margin-right: 5rem;
-    padding: 3rem 5rem;
-    background-color: rgb(241, 241, 241);
-    height:100%;
-    width: 50%;
-    margin-right:0;
+    margin-left: 8rem;
+    margin-right: 0;
+    height: 100vh;
+    width: 130rem;
+      margin-bottom: 0;
+    background: url(/Images/login-img.jpg);
+    background-size:cover;
 }
 
 .copywright{
     
 }
 
-.login-image{
-    object-fit:contain;
-    width: 40rem;
-    height: 30rem;
-    border-radius: 8px;;
-    
+
+
+.login-p {
+    color: rgb(139, 128, 128);
+}
+
+.link:hover {
+    color: hsla(0, 5%, 52%, 0.685);
+}
+
+.link-bolden{
+    font-weight:bold;
 }
