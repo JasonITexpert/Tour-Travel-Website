@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\Images\\Main Image.png"
     },
     {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Main-image-2.png",
+      "PackagePath": "staticwebassets\\Images\\Main-image-2.png"
+    },
+    {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\background-planes.png",
       "PackagePath": "staticwebassets\\Images\\background-planes.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\login-img.jpg",
+      "PackagePath": "staticwebassets\\Images\\login-img.jpg"
     },
     {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\css\\site.css",

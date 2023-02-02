@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HGWabt4yHEaT6d+o/DewLZD3YdPGD11fp2SPL29SETE=",
+  "Hash": "v4QhiYWJ2C+PoqhlOIKRwPyEqt2LYgW5mdAMb77EVw8=",
   "Source": "TourWebApp",
   "BasePath": "_content/TourWebApp",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\background-planes.png"
     },
     {
+      "Identity": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\login-img.jpg",
+      "SourceId": "TourWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\",
+      "BasePath": "_content/TourWebApp",
+      "RelativePath": "Images/login-img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\login-img.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Main Image.png",
       "SourceId": "TourWebApp",
       "SourceType": "Discovered",
@@ -1137,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Main Image.png"
+    },
+    {
+      "Identity": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Main-image-2.png",
+      "SourceId": "TourWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\",
+      "BasePath": "_content/TourWebApp",
+      "RelativePath": "Images/Main-image-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Main-image-2.png"
     },
     {
       "Identity": "C:\\Users\\Jason Asare\\Desktop\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\js\\site.js",
