@@ -182,11 +182,9 @@ namespace TourWebApp.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -215,6 +213,15 @@ namespace TourWebApp.Data.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<float>("TotalSpent")
+                        .HasColumnType("real");
+
+                    b.Property<int>("TotalTripsTaken")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TripsPending")
+                        .HasColumnType("int");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -241,14 +248,17 @@ namespace TourWebApp.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("ApplicationUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ApplicationUserId1")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<bool>("Cancelled")
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("DayBooked")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("DestinationID")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -267,34 +277,45 @@ namespace TourWebApp.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Packages")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
                     b.Property<float>("TotalBill")
                         .HasColumnType("real");
 
+                    b.Property<Guid?>("TripsApplicationUserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("BookingId");
 
-                    b.ToTable("Bookings", (string)null);
+                    b.HasIndex("ApplicationUserId1");
+
+                    b.HasIndex("TripsApplicationUserId");
+
+                    b.ToTable("Bookings");
                 });
 
-            modelBuilder.Entity("TourWebApp.Models.Destination", b =>
+            modelBuilder.Entity("TourWebApp.Models.Trips", b =>
                 {
-                    b.Property<Guid>("DestinationId")
+                    b.Property<Guid>("ApplicationUserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("DestinationCountry")
+                    b.Property<string>("ApplicationUserId1")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("Completed")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("int");
 
-                    b.Property<string>("DestinationName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("ApplicationUserId");
 
-                    b.HasKey("DestinationId");
+                    b.HasIndex("ApplicationUserId1");
 
-                    b.ToTable("Destinations", (string)null);
+                    b.ToTable("Trips");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -346,6 +367,33 @@ namespace TourWebApp.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("TourWebApp.Models.Booking", b =>
+                {
+                    b.HasOne("TourWebApp.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId1");
+
+                    b.HasOne("TourWebApp.Models.Trips", null)
+                        .WithMany("Bookings")
+                        .HasForeignKey("TripsApplicationUserId");
+
+                    b.Navigation("ApplicationUser");
+                });
+
+            modelBuilder.Entity("TourWebApp.Models.Trips", b =>
+                {
+                    b.HasOne("TourWebApp.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId1");
+
+                    b.Navigation("ApplicationUser");
+                });
+
+            modelBuilder.Entity("TourWebApp.Models.Trips", b =>
+                {
+                    b.Navigation("Bookings");
                 });
 #pragma warning restore 612, 618
         }

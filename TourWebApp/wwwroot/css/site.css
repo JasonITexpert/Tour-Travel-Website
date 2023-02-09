@@ -1,10 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;600;700;800;900&display=swap");
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
 
 .main-logo {
     background: url(pngegg.png);
@@ -22,20 +64,20 @@
 .main-header {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.8rem;
     color: #222222;
 }
 
 .main-logo {
     color: #FA7436;
-    width: 102px;
-    height: 40px;
+    width: 8rem;
+    height: 2.8rem;
 }
 
 .orange {
@@ -43,7 +85,7 @@
 }
 
 .header-number {
-    margin-left: 42px;
+    margin-left: 2rem;
 }
 
 a {
@@ -51,43 +93,32 @@ a {
     color: inherit;
 }
 
-    a:active {
+    a:active, a:visited, a:link {
         color: none;
         text-decoration: none;
     }
 
 
-    a:visited {
-        text-decoration: none;
-        color: none;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    a:link {
-        color: inherit;
-    }
 
 .sub-header {
-    margin-top: 50px;
+    margin-top: 3.2rem;
     display: flex;
 }
 
 .small-sub-header {
     font-family: 'lato';
-    margin-top: 50px;
-    width: 488px;
-    height: 96px;
+    margin-top: 3.1rem;
+    width: 30.5rem;
+    height: 6rem;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .big-sub-header {
-    font-size: 72px;
-    width: 561px;
+    font-size: 4.5rem;
+    width: 35.75rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .sub-header-right {
@@ -97,7 +128,7 @@ a {
 }
 
 .sub-head-btn {
-    width: 204px;
+    width: 12.8rem;
     background: #FA7436;
     color: white;
     padding: 20px 40px;
@@ -110,40 +141,64 @@ a {
     }
 
 .img-main {
+    background-image: url('/Images/Main Image.png');
+    background-size:cover;
+    height: 50rem;
     width: 100%;
 }
 
+img-main:hover {
+    background-image: url('../Images/main-gif.gif');
+    background-size:cover;
+}
+
+
 .b-body {
-    margin: auto 100px;
+    margin: auto 6.25rem;
 }
 
 .main-sub-form {
-    position: relative;
     display: flex;
     background-color: white;
     border-radius: 12px;
     border: 1px solid #E4D4CB;
+    z-index: 1;
+    position: absolute;
+    bottom: -50px;
+    margin: auto 3.1rem auto 2.4rem;
+    align-self: center;
+    padding: 10px 10px;
+    font-family: sans-serif;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .sec-input {
     border-radius: 62px;
     border: 1px solid #E4D4CB;
-    padding: 10px 20px;
+    padding: 10px 12px;
 }
 
+    .sec-input:hover, .sec-input:focus {
+        border: 1px solid #f0a887;
+    }
+
+    .sec-input:focus {
+        border: 1px solid hsla(88, 32%, 85%, 0.5);
+    }
+
 .margin-top-down10 {
-    margin: 10px auto;
+    margin: 0.7rem auto;
 }
 
 .sec {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: auto 20px;
+    margin: auto 0.8rem;
 }
 
 .top-desc {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 
@@ -165,23 +220,28 @@ a {
 
 
 .main-img2 {
+    /*    margin-left: 5rem;
+*/
 }
 
 .btn-top {
-    margin-top: 72px;
+    margin-top: 4.5rem;
 }
 
 .section-about {
     display: flex;
-    margin-top: 200px;
+    margin-top: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    filter: hue-rotate()
 }
 
 .about-right {
-    margin-left: 50px;
+    margin-left: 3.1rem;
 }
 
 .about-left {
-    margin-right: 50px;
+    /*    margin-right: 50px;*/
 }
 
 .h1-about {
@@ -189,7 +249,8 @@ a {
 }
 
 .p-about {
-    margin: 56px auto;
+    margin: 4rem auto;
+    line-height: 1.8rem;
 }
 
 .about-stats {
@@ -198,6 +259,7 @@ a {
     text-align: center;
     margin: 100px auto;
     text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
 }
 
     .about-stats p {
@@ -207,7 +269,7 @@ a {
 
     .about-stats h5 {
         color: #FA7436;
-        font-family: 'Satoshi', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 2.6rem;
     }
 
@@ -222,12 +284,11 @@ a {
 }
 
 .login-section {
-    font-family: sans-serif, Arial;
-    display:flex;
+    display: flex;
 }
 
 .login-h2 {
-    font-weight: 500;
+    font-weight: 500
 }
 
 .login-p {
@@ -241,12 +302,11 @@ a {
     width: 20rem;
     padding: 0.7rem 1rem;
     font-family: inherit;
-
 }
 
 .login-label {
     margin: 0.5rem auto 0.1rem auto;
-    display:block;
+    display: block;
 }
 
 .login-btn {
@@ -269,13 +329,12 @@ a {
     margin-right: 0;
     height: 100vh;
     width: 130rem;
-      margin-bottom: 0;
+    margin-bottom: 0;
     background: url(/Images/login-img.jpg);
-    background-size:cover;
+    background-size: cover;
 }
 
-.copywright{
-    
+.copywright {
 }
 
 
@@ -288,6 +347,175 @@ a {
     color: hsla(0, 5%, 52%, 0.685);
 }
 
-.link-bolden{
-    font-weight:bold;
+.link-bolden {
+    font-weight: bold;
+}
+
+
+
+.main-container {
+    position: relative;
+}
+
+
+
+.main-img {
+    z-index: 0;
+}
+
+.search-btn {
+    border: none;
+    background: #FA7436;
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    margin: 1.75rem 1rem 1rem 3rem;
+}
+
+    .search-btn i {
+        color: #fff;
+    }
+
+.sec-input::placeholder {
+    color: #E4D4CB;
+}
+
+.icon {
+    padding-top: 45px;
+}
+
+
+.link-div{
+    margin-inline: 1rem;
+
+
+}
+
+.nav {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+    .nav a {
+        padding-bottom: 1.5rem;
+    }
+
+    .nav a:hover {
+        font-weight: 700;
+        color: #FA7436;
+        
+        border-bottom: 0.4px solid #FA7436;
+    }
+.center{
+    text-align: center;
+}
+
+.nav-homeopt{
+    list-style: none;
+    text-align:center;
+}
+
+    .nav-homeopt li{
+        display: inline-block;
+        margin-inline: 1rem;
+    }
+
+        .nav-homeopt li: {
+            border-bottom: 2px solid #FA7436;
+        }
+
+        .home-destinations {
+            margin-top: 10rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+.stat-data {
+    color: #22222280;
+    font-weight:;
+}
+
+.about-stats h5 {
+    color: #FA743680;
+}
+
+.btn-viewall {
+    padding: 0.8rem 2.5rem;
+    border: 1px solid #FA7436;
+    border-radius: 0.25rem;
+   
+
+    margin: auto auto;
+}
+
+.home-destinations{
+    text-align: center;
+}
+
+.div-sideinfo{
+    margin-top: 10rem;
+    display:flex;
+}
+
+.div-sideinfo1{
+    width: 21rem;
+   margin-top: 2rem;
+}
+
+    .div-sideinfo a {
+        padding: 0.8rem 2.5rem;
+        border: 1px solid #FA7436;
+        border-radius: 0.25rem;
+        
+    }
+
+ side-right {
+     display:flex;
+    }
+
+    .choose-us{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        margin-inline: 2rem;
+    }
+
+        .choose-us p {
+            font-size: 0.8rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+.choose-us-main{
+    display: flex;
+    justify-content: space-between
+}
+
+.t-margin{
+    margin-top: 4rem;
+}
+
+.home-destatination-sub {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.home-btn {
+    
+
+}
+
+.reviews{
+    margin: 8rem auto;
+    text-align: justify;
+    width: 30rem;
+    word-spacing: 0.05rem;
+}
+
+.quote {
+    font-weight: 300;
+    font-size: 5rem;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.quotation{
+    
 }

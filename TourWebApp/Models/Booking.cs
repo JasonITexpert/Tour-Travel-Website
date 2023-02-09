@@ -6,13 +6,16 @@ namespace TourWebApp.Models
 {
     public class Booking
     {
+        public enum Package
+        {
+            Individual, Family, Couple
+        }
+
+        public Guid ApplicationUserId { get; set; }
+
         [Key]
         [DisplayName("Booking ID")]
         public Guid BookingId { get; set; }
-
-        [ForeignKey("Destination")]
-        [Required]
-        public Guid DestinationID { get; set; }
         [Required]
         public string Origin { get; set; }
         [DisplayName("StartDate")]
@@ -24,11 +27,15 @@ namespace TourWebApp.Models
         public bool Indiviual { get; set; }
         [DisplayName("Group Size")]
         public int Groupsize { get; set; }
+        [Required]
+        public Package Packages { get; set; }  
         [DisplayName("Hotel Booked")]
         public string HotelBooked { get; set; }
         [DisplayName("TotalBill")]
         public float TotalBill { get; set; }
         public bool Cancelled { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
+
 
     }
 }

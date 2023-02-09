@@ -1,4 +1,7 @@
-﻿<body>
+﻿<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
    <div class="b-body">
         <div class="main-header ">
             <div>
@@ -6,14 +9,15 @@
                     <a class="link" asp-controller="Home" asp-action="Index">TRAVEL AGENTS</a>
                 </div>
             </div>
-            <div><a  asp-controller="Home" asp-action="Index">HOME</a></div>
-            <div><a class="link">ABOUT US</a></div>
-            <div><a class="link" asp-area="Identity" asp-page="/Account/Login">LOGIN</a></div>
-            <div><a class="link">TOUR PACKAGES</a></div>
-            <div><a class="link">OUR SERVICES</a></div>
-            <div><a class="link">GALLERY</a></div>
-            <div><a class="link">CONTACT</a></div>
-
+            <ul class="nav">
+            <li class="link-div  "><a  asp-controller="Home" asp-action="Index">HOME</a></li>
+            <li class="link-div"><a class="link ">ABOUT US</a></li>
+            <li class="link-div"><a class="link " asp-area="Identity" asp-page="/Account/Login">LOGIN</a></li>
+            <li class="link-div"><a class="link">TOUR PACKAGES</a></li>
+            <li class="link-div"><a class="link">OUR SERVICES</a></li>
+            <li class="link-div"><a class="link">GALLERY</a></li>
+            <li class="link-div"><a class="link">CONTACT</a></li>
+            </ul>
             <div>
                 <div class="orange header-number">
                     +233 505 5055
@@ -32,28 +36,36 @@
                 </div>
             </div>
         </div>
-        <img class="img-main" src="/Images/Main Image.png" />
-        <div class="main-sub-form">
-            <div class="sec">
-                <label class="top-desc">From</label>
-                <input class="sec-input margin-top-down10" type="text" />
-            </div class="sec">
-            <div class="sec">
-                <label class="top-desc">To</label>
-                <input class="sec-input margin-top-down10" type="text" />
-            </div> 
-            <div class="sec">
-                <label class="top-desc">Dates</label>
-                <input class="sec-input margin-top-down10" type="date" />
+        <div class="main-container">
+            <div class="main-img">
+                     <img class="img-main" />
             </div>
-            <div class="sec">
-                <label class="top-desc">Guest</label>
-                <input class="sec-input margin-top-down10" type="number" />
-            </div>
-            <div>
-                <button></button>
+            <div class="main-sub-form">
+                <div class="sec">
+                    <label class="top-desc">From</label>
+                    @*<span class="icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </span>*@
+                    <input class="sec-input" placeholder="Bali, Indonesia" type="text" />
+                </div class="sec">
+                <div class="sec">
+                    <label class="top-desc">To</label>
+                    <input class="sec-input" placeholder="Bali, Indonesia" type="text" />
+                </div> 
+                <div class="sec">
+                    <label class="top-desc">Dates</label>
+                    <input class="sec-input" placeholder="Select a date range" type="date" />
+                </div>
+                <div class="sec">
+                    <label class="top-desc">Guest</label>
+                    <input class="sec-input" placeholder="Select number of your guests" type="number" />
+                </div>
+                <div>
+                    <button class="search-btn"><i class="bi bi-search"></i></button>
+                </div>
             </div>
         </div>
+
         <div class="section-about">
             <div class="mainImg-mountain about-left">
                 <img class="main-img2" src="~/Images/Main-image-2.png" />
@@ -67,7 +79,7 @@
                     <div class="about-stats">
                         <div class="stat-single">
                             <h5>200+</h5>
-                            <p>customer & partners</p>
+                            <p class="stat-data">customer & partners</p>
                         </div>
                         <div  class="stat-single">
                             <h5>500+</h5>
@@ -75,11 +87,60 @@
                         </div>
                         <div class="stat-single">
                             <h5>1k+</h5>
-                            <p  class="">success in journey</p>
+                            <p  class="stat-data">success in journey</p>
                         </div>
                         
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="home-destinations">
+            <h1 class="center home-destatination-sub">The <span class="orange">best place</span> for a vacation</h1>
+            <ul class="nav-homeopt">
+                <li><a>Special Deals</a></li>
+                <li><a>Popular</a></li>
+                <li><a>Recommendation</a></li>
+                <li><a>Best Price</a></li>
+            </ul>
+            <a class="btn-viewall orange">View All</a>
+        </div>
+
+        <div class="div-sideinfo"> 
+            <div>
+                <h1>Why <span class="orange">Choose</span> Us</h1>
+                <div class="side-info">
+                    <div class="div-sideinfo1">
+                    <p>We ensure that you'll embark on a perfectly planned, save vacation at a price you can afford</p>
+                    </div>
+                </div>
+                <div class="t-margin">
+                    <a class="orange ">Learn more</a>
+                </div>
+            </div>
+            <div class="choose-us-main">
+                <div class="choose-us">
+                <div><img src="~/Images/Icon1.png" alt="Icon image"/></div>
+                <div><h5>Best Travel Agency</h5></div>
+                <div><p>Travel Agencies that provide one trip, one way and multi trip services.</p></div>
+            </div>
+            <div class="choose-us">
+                <div><img src="/Images/Icon2.png" alt="Icon image"/></div>
+                <div><h5>Competitive Price</h5></div>
+                <div><p>The price offered are affordable starting from the ordinary to the exclusive.</p></div>
+            </div>
+            <div class="choose-us">
+                <div><img src="/Images/Icon3.png" alt="Icon image"/></div>
+                <div><h5>Global Coverage</h5></div>
+                <div><p>There are many tourist attractions, hotels and interesting entertainment.</p></div>
+            </div>
+            </div>          
+        </div>
+        <div class="reviews">
+            <div><h1 class="center">Contact us to review  <span class="orange">your experience</span> with us</h1></div>
+            <div>Give us feedback and let us know what experiences you had while on vacation with us</div>
+            <img class="quotation" src="~/Images/Quotations.png" />
+            <div>
+
             </div>
         </div>
    </div>

@@ -11,6 +11,6 @@ namespace TourWebApp.Data
         {
         }
         public DbSet<Booking> Bookings { get; set; }
-        public DbSet<Destination> Destinations { get; set; }
+        public DbSet<Trips> Trips { get; set; }
     }
 }
