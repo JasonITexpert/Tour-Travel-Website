@@ -46,6 +46,7 @@
 
 body {
     font-family: 'Manrope', sans-serif;
+    background-color: #FEFCFB;
 }
 
 .main-logo {
@@ -84,6 +85,12 @@ body {
     color: #FA7436
 }
 
+.learn-more-btn {
+    background-color: #FA7436;
+    color:white;
+    
+}
+
 .header-number {
     margin-left: 2rem;
 }
@@ -93,11 +100,20 @@ a {
     color: inherit;
 }
 
-    a:active, a:visited, a:link {
+
+    a, a:visited{
         color: none;
         text-decoration: none;
     }
 
+        
+
+        a:hover, a:focus {
+            color: none;
+            text-decoration: none;
+        }
+
+        
 
 
 .sub-header {
@@ -155,6 +171,7 @@ img-main:hover {
 
 .b-body {
     margin: auto 6.25rem;
+    background-color:#FEFCFB;
 }
 
 .main-sub-form {
@@ -168,7 +185,7 @@ img-main:hover {
     margin: auto 3.1rem auto 2.4rem;
     align-self: center;
     padding: 10px 10px;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -438,18 +455,27 @@ img-main:hover {
     color: #FA743680;
 }
 
-.btn-viewall {
+.btn-viewall, .learn-more-2{
     padding: 0.8rem 2.5rem;
     border: 1px solid #FA7436;
     border-radius: 0.25rem;
-   
-
-    margin: auto auto;
+    color: #FA7436;
 }
 
-.home-destinations{
-    text-align: center;
+.discover-btn:hover, .learn-more-btn-1:hover {
+    border: 1px solid #FA7436;
+    color: #FA7436;
+    background-color: white;
 }
+
+    .btn-viewall:hover, .learn-more-2:hover {
+        color: white;
+        background-color: #FA7436;
+    }
+
+    .home-destinations {
+        text-align: center;
+    }
 
 .div-sideinfo{
     margin-top: 10rem;
@@ -506,16 +532,140 @@ img-main:hover {
 .reviews{
     margin: 8rem auto;
     text-align: justify;
+    align-items: center;
     width: 30rem;
     word-spacing: 0.05rem;
+    display:flex;
+    flex-direction:column;
+    
 }
 
 .quote {
-    font-weight: 300;
-    font-size: 5rem;
     margin-right: auto;
+}
+
+.quotation{
+    padding-bottom:1rem;
+    display:block;
+    margin-right: 80vw;
+}
+
+.actual-reviews{
+    margin-top: 2rem;
+}
+
+.review{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    background-color: #fff;
+    margin-inline: 2rem;
+    padding: 2rem 3rem;
+}
+
+    .review p {
+        color: rgba(18, 18, 18, 0.6);
+        width: 16rem;
+        margin-bottom: 2.5rem;
+    }
+
+.review-lower h4 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.review-lower {
+    display: flex;
+}
+
+.rev-img{
+    margin-right: 1rem;
+   /* height: 4.5rem;
+    object-fit:;*/
+}
+
+.rating-img{
+   /* width: 10rem;
+    height: 1.5rem;
+    object-fit:contain;*/
+}
+
+.review-lower{
+    display: flex;
+}
+
+.user-reviews{
+    display:flex;
+
+}
+
+.blog {
+    margin-top: 7rem;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
-.quotation{
-    
+.blog-h{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: 7rem;
+
+}
+
+.blog-h-p{
+    width: 18.5rem;
+    margin-bottom: 3rem;
+}
+
+.actual-blog{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 1rem;
+    text-align:left;
+}
+
+    .actual-blog h6 {
+        margin: 2rem auto;
+        text-align: left;
+        align-items:start;
+        font-weight:600;
+    }
+
+    .actual-blog img{
+        border-radius: 1rem;
+    }
+
+    .blogs {
+        display: flex;
+    }
+
+    .affiliates{
+        margin: 5rem auto;
+    }
+
+    .logos-affiliates{
+        object-fit:contain;
+        display:block;
+        width: 60rem;
+        margin: auto auto;
+    }
+
+.footer {
+    height: 20rem;
+    width: 100%;
+    background-color: #F4EAE5;
+    z-index: 0;
+}
+
+.footer-container{
+    position:relative;
+}
+
+.footer-bg-planes {
+    margin-left:2rem;
+    position:absolute;
+    z-index: 1;
+    top:-60px;
+
+
 }

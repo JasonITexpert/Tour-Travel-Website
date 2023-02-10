@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\TourWebApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\BG planes footer.png",
+      "PackagePath": "staticwebassets\\Images\\BG planes footer.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Blog-image1.png",
+      "PackagePath": "staticwebassets\\Images\\Blog-image1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Blog-image2.png",
+      "PackagePath": "staticwebassets\\Images\\Blog-image2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Blog-image3.png",
+      "PackagePath": "staticwebassets\\Images\\Blog-image3.png"
+    },
+    {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Icon1.png",
       "PackagePath": "staticwebassets\\Images\\Icon1.png"
     },
@@ -29,6 +45,14 @@
       "PackagePath": "staticwebassets\\Images\\Quotations.png"
     },
     {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Rating.png",
+      "PackagePath": "staticwebassets\\Images\\Rating.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Sponsors.png",
+      "PackagePath": "staticwebassets\\Images\\Sponsors.png"
+    },
+    {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\background-planes.png",
       "PackagePath": "staticwebassets\\Images\\background-planes.png"
     },
@@ -39,6 +63,18 @@
     {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\main-gif.gif",
       "PackagePath": "staticwebassets\\Images\\main-gif.gif"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\review-image1.png",
+      "PackagePath": "staticwebassets\\Images\\review-image1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\review-image2.png",
+      "PackagePath": "staticwebassets\\Images\\review-image2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\review-image3.png",
+      "PackagePath": "staticwebassets\\Images\\review-image3.png"
     },
     {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\css\\site.css",
