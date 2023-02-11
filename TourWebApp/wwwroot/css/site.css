@@ -29,6 +29,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 
 
@@ -119,6 +121,8 @@ a {
 .sub-header {
     margin-top: 3.2rem;
     display: flex;
+    z-index: 2;
+
 }
 
 .small-sub-header {
@@ -157,8 +161,8 @@ a {
     }
 
 .img-main {
-    background-image: url('/Images/Main Image.png');
-    background-size:cover;
+   /* background-image: url('/Images/Main Image.png');*/
+    
     height: 50rem;
     width: 100%;
 }
@@ -181,7 +185,7 @@ img-main:hover {
     border: 1px solid #E4D4CB;
     z-index: 1;
     position: absolute;
-    bottom: -50px;
+    bottom: 10px;
     margin: auto 3.1rem auto 2.4rem;
     align-self: center;
     padding: 10px 10px;
@@ -192,8 +196,16 @@ img-main:hover {
 .sec-input {
     border-radius: 62px;
     border: 1px solid #E4D4CB;
-    padding: 10px 12px;
+    padding: 10px 13px;
+    
 }
+
+    .sec-input::placeholder{
+        text-align:center;
+        font-size: 13.5px;
+    }
+
+    
 
     .sec-input:hover, .sec-input:focus {
         border: 1px solid #f0a887;
@@ -216,6 +228,7 @@ img-main:hover {
 
 .top-desc {
     margin-left: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -246,6 +259,8 @@ img-main:hover {
 }
 
 .section-about {
+    background-color: #F7F8FC;
+    padding: 1rem;
     display: flex;
     margin-top: 15rem;
     margin-left: auto;
@@ -625,13 +640,18 @@ img-main:hover {
 }
 
     .actual-blog h6 {
-        margin: 2rem auto;
+        margin-top:2rem;
+        width: 18rem;
         text-align: left;
         align-items:start;
         font-weight:600;
     }
 
-    .actual-blog img{
+    .actual-blog p{
+        margin-top: 1rem;
+    }
+
+    .actual-blog img {
         border-radius: 1rem;
     }
 
@@ -666,6 +686,75 @@ img-main:hover {
     position:absolute;
     z-index: 1;
     top:-60px;
-
-
 }
+
+.footer-paperplane{
+    position:absolute;
+    left: 1170px;
+    top: -100px;
+}
+
+.registration{
+    margin: 1rem;
+}
+
+.google-signin-btn {
+    color: #333333;
+    padding: 0.5rem 3rem;
+    border-radius: 10rem;
+    border: 0.51px solid rgba(51, 51, 51, 0.6);
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.signup-btn {
+    color: #333333;
+    padding: 0.5rem 3rem;
+    border-radius: 10rem;
+    border: 0.51px solid rgba(51, 51, 51, 0.6);
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-input {
+    padding: 0.5rem 3rem;
+    border-radius: 4px;
+    border: 0.51px solid rgba(51, 51, 51, 0.6);
+    background-color: #fff;
+    margin: 0.2rem;
+}
+
+.register-label{
+    margin: 0.2rem auto;
+    display:block;
+}
+
+.register-flex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+
+.header1{
+    position: relative;
+}
+
+.top-planes{
+    background-image: url(/Images/background-plane-top.png);
+    height: 20rem;
+    width: 100vw;
+    right: -10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.form-icon {
+    position: absolute;
+    bottom: 30px;
+    color: #FA7436;
+    margin-left: 1rem;
+}
+

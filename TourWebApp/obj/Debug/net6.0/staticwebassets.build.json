@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VUAjJulPXx6hMVuP/7bUK8kngBVCpCCGFXkt+Y1l1Xk=",
+  "Hash": "XnBZePagezqVxqTk5oAOTZB0I5WdvtHudfkgr+mjZH4=",
   "Source": "TourWebApp",
   "BasePath": "_content/TourWebApp",
   "Mode": "Default",
@@ -1105,12 +1105,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\background-planes.png",
+      "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\backgroundplanes-tl.png",
       "SourceId": "TourWebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\",
       "BasePath": "_content/TourWebApp",
-      "RelativePath": "Images/background-planes.png",
+      "RelativePath": "Images/backgroundplanes-tl.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1119,7 +1119,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\background-planes.png"
+      "OriginalItemSpec": "wwwroot\\Images\\backgroundplanes-tl.png"
+    },
+    {
+      "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\backgroundplanes-tr.png",
+      "SourceId": "TourWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\",
+      "BasePath": "_content/TourWebApp",
+      "RelativePath": "Images/backgroundplanes-tr.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\backgroundplanes-tr.png"
+    },
+    {
+      "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\background-plane-top.png",
+      "SourceId": "TourWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\",
+      "BasePath": "_content/TourWebApp",
+      "RelativePath": "Images/background-plane-top.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\background-plane-top.png"
     },
     {
       "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\BG planes footer.png",
@@ -1309,6 +1343,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\Main-image-2.png"
     },
     {
+      "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Paper-plane.png",
+      "SourceId": "TourWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\",
+      "BasePath": "_content/TourWebApp",
+      "RelativePath": "Images/Paper-plane.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Paper-plane.png"
+    },
+    {
       "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Quotations.png",
       "SourceId": "TourWebApp",
       "SourceType": "Discovered",
@@ -1409,6 +1460,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Sponsors.png"
+    },
+    {
+      "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Videos\\Tourism _ Travel Sample Video AD.mp4",
+      "SourceId": "TourWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\",
+      "BasePath": "_content/TourWebApp",
+      "RelativePath": "Images/Videos/Tourism _ Travel Sample Video AD.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Videos\\Tourism _ Travel Sample Video AD.mp4"
     },
     {
       "Identity": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\js\\site.js",

@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\Images\\Main-image-2.png"
     },
     {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Paper-plane.png",
+      "PackagePath": "staticwebassets\\Images\\Paper-plane.png"
+    },
+    {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Quotations.png",
       "PackagePath": "staticwebassets\\Images\\Quotations.png"
     },
@@ -53,8 +57,20 @@
       "PackagePath": "staticwebassets\\Images\\Sponsors.png"
     },
     {
-      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\background-planes.png",
-      "PackagePath": "staticwebassets\\Images\\background-planes.png"
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\Videos\\Tourism _ Travel Sample Video AD.mp4",
+      "PackagePath": "staticwebassets\\Images\\Videos\\Tourism _ Travel Sample Video AD.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\background-plane-top.png",
+      "PackagePath": "staticwebassets\\Images\\background-plane-top.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\backgroundplanes-tl.png",
+      "PackagePath": "staticwebassets\\Images\\backgroundplanes-tl.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\backgroundplanes-tr.png",
+      "PackagePath": "staticwebassets\\Images\\backgroundplanes-tr.png"
     },
     {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\login-img.jpg",
