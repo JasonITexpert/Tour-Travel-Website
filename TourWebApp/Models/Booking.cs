@@ -26,7 +26,7 @@ namespace TourWebApp.Models
         public DateTime DayBooked { get; set; } = DateTime.Now;
         public bool Indiviual { get; set; }
         [DisplayName("Group Size")]
-        public int Groupsize { get; set; }
+        public uint Groupsize { get; set; }
         [Required]
         public Package Packages { get; set; }  
         [DisplayName("Hotel Booked")]

@@ -15,13 +15,15 @@
             <br />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="">
-                <label class="register-label" asp-for="Input.Email"></label>
-                <input asp-for="Input.Email" class="register-input" autocomplete="username" aria-required="true" />
+                <label class="register-labels" asp-for="Input.Email"></label>
+                <input  asp-for="Input.Email" class="register-input" autocomplete="username" aria-required="true" />
+                <br />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="">
+                <label class="register-labels" asp-for="Input.Password"></label>
                 <input asp-for="Input.Password" class="register-input" autocomplete="new-password" aria-required="true" />
-                <label class="register-label" asp-for="Input.Password"></label>
+                <br />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
             <div class="">
@@ -54,7 +56,7 @@
                             <p>
                                 @foreach (var provider in Model.ExternalLogins)
                                 {
-                                    <button type="submit" class="google-signin-btn" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">Sign in with @provider.DisplayName</button>
+                                    <button type="submit" class="google-log-in" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account"><i class="bi bi-google"></i>Sign in with @provider.DisplayName</button>
                                 }
                             </p>
                         </div>

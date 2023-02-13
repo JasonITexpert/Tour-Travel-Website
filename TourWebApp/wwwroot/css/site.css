@@ -347,7 +347,16 @@ img-main:hover {
     border-radius: 0.6rem;
     color: white;
     background-color: #FA7436;
-    margin-bottom: 1rem;
+
+}
+.signup-btn {
+    padding: 0.5rem;
+
+    width: 20.4rem;
+    border: 1px solid white;
+    border-radius: 0.6rem;
+    color: white;
+    background-color: #FA7436;
 }
 
 .login-left {
@@ -358,6 +367,7 @@ img-main:hover {
 
 .login-right {
     margin-left: 8rem;
+    margin-top: 0;
     margin-right: 0;
     height: 100vh;
     width: 130rem;
@@ -670,7 +680,7 @@ img-main:hover {
         margin: auto auto;
     }
 
-.footer {
+.bottom {
     height: 20rem;
     width: 100%;
     background-color: #F4EAE5;
@@ -707,14 +717,7 @@ img-main:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-.signup-btn {
-    color: #333333;
-    padding: 0.5rem 3rem;
-    border-radius: 10rem;
-    border: 0.51px solid rgba(51, 51, 51, 0.6);
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 .register-input {
     padding: 0.5rem 3rem;
@@ -724,7 +727,7 @@ img-main:hover {
     margin: 0.2rem;
 }
 
-.register-label{
+.register-labels{
     margin: 0.2rem auto;
     display:block;
 }
@@ -734,6 +737,7 @@ img-main:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -756,5 +760,25 @@ img-main:hover {
     bottom: 30px;
     color: #FA7436;
     margin-left: 1rem;
+}
+
+.google-log-in {
+    position: relative;
+    padding: 0.4rem 1rem;
+    width: 20.4rem;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    border: 0.51px solid rgba(51, 51, 51, 0.6);
+    margin-top: 0.4rem;
+    
+}
+
+.google-log-in i{
+    position:absolute;
+    left: 40px;
+}
+
+.login-section {
+    font-family: 'Poppins', sans-serif;
 }
 

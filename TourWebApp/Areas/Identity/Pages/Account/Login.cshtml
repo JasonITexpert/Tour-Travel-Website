@@ -35,18 +35,29 @@
                     <button id="login-submit" type="submit" class="login-btn">Log in</button>
                     
                 </div>
+                
+            </form>
+            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
                 <div>
-                    <p class="login-p">
-                        <a class="link" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p class="login-p">
-                        Don't have an account? <a class="link link-bolden" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Sign Up</a>
-                    </p>
-                    <p class="login-p">
-                        <a class="link" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                    <p>
+                        @foreach (var provider in Model.ExternalLogins)
+                        {
+                            <button type="submit" class="google-log-in" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account"><i class="bi bi-google"></i> Sign in with @provider.DisplayName</button>
+                        }
                     </p>
                 </div>
             </form>
+            <div>
+                <p class="login-p">
+                    <a class="link" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                </p>
+                <p class="login-p">
+                    Don't have an account? <a class="link link-bolden" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Sign Up</a>
+                </p>
+                <p class="login-p">
+                    <a class="link" id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                </p>
+            </div>
         </section>
     </div>
     <div class="login-right">

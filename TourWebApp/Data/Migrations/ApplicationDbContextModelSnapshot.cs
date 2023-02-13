@@ -263,8 +263,8 @@ namespace TourWebApp.Data.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Groupsize")
-                        .HasColumnType("int");
+                    b.Property<long>("Groupsize")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("HotelBooked")
                         .IsRequired()
@@ -307,9 +307,8 @@ namespace TourWebApp.Data.Migrations
                     b.Property<string>("ApplicationUserId1")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("Completed")
-                        .IsRequired()
-                        .HasColumnType("int");
+                    b.Property<long>("Completed")
+                        .HasColumnType("bigint");
 
                     b.HasKey("ApplicationUserId");
 
