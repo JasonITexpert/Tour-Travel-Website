@@ -71,8 +71,11 @@ body {
     font-weight: 400;
     line-height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-around;
     align-items: center;
+
     margin-top: 1.8rem;
     color: #222222;
 }
@@ -121,7 +124,8 @@ a {
 .sub-header {
     margin-top: 3.2rem;
     display: flex;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -287,6 +291,7 @@ img-main:hover {
 
 .about-stats {
     display: flex;
+    flex-wrap: wrap;
     align-items: start;
     text-align: center;
     margin: 100px auto;
@@ -437,6 +442,7 @@ img-main:hover {
     font-family: 'Lato', sans-serif;
     
 }
+
 
     .nav a {
         padding-bottom: 1.5rem;
@@ -685,6 +691,7 @@ img-main:hover {
     width: 100%;
     background-color: #F4EAE5;
     z-index: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer-container{
@@ -782,3 +789,26 @@ img-main:hover {
     font-family: 'Poppins', sans-serif;
 }
 
+footer {
+    font-family: 'Poppins', sans-serif;
+    border-top: 0.5px solid #c0baba;
+    padding: 2rem;
+    background-color: #F4EAE5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom ul{
+    list-style: none;
+    
+}
+
+.layout-right{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.l-right-1{
+    margin-right: 1rem;
+}

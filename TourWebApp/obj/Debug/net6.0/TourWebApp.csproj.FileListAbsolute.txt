@@ -836,3 +836,5 @@ C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\Tour-Travel-Website\TourW
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\Tour-Travel-Website\TourWebApp\obj\Debug\net6.0\TourWebApp.genruntimeconfig.cache
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\Tour-Travel-Website\TourWebApp\obj\Debug\net6.0\ref\TourWebApp.dll
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\Tour-Travel-Website\TourWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\Tour-Travel-Website\TourWebApp\bin\Debug\net6.0\SendGrid.dll
+C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\Tour-Travel-Website\TourWebApp\bin\Debug\net6.0\StarkbankEcdsa.dll
