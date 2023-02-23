@@ -11,11 +11,12 @@ namespace TourWebApp.Models
             Individual, Family, Couple
         }
 
-        public Guid ApplicationUserId { get; set; }
 
         [Key]
         [DisplayName("Booking ID")]
         public Guid BookingId { get; set; }
+        public Guid ApplicationUserId { get; set; }
+
         [Required]
         public string Origin { get; set; }
         [DisplayName("StartDate")]
@@ -30,7 +31,7 @@ namespace TourWebApp.Models
         [Required]
         public Package Packages { get; set; }  
         [DisplayName("Hotel Booked")]
-        public string HotelBooked { get; set; }
+        public string? HotelBooked { get; set; }
         [DisplayName("TotalBill")]
         public float TotalBill { get; set; }
         public bool Cancelled { get; set; }

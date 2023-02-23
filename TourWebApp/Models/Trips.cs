@@ -14,7 +14,7 @@ namespace TourWebApp.Models
         public ApplicationUser ApplicationUser { get; set; }
 
         [DisplayName("Bookings")]
-        public List<Booking> Bookings { get; set; }
+        public ICollection<Booking>? Bookings { get; set; }
 
     }
 }

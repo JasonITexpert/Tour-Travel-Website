@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -6,6 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-TourWebApp-b98a48c5-237e-4b45-b920-ef7352be8d3f</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Areas\Identity\Pages\Account\Login.cshtml~RF18d46daa.TMP" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.6" />

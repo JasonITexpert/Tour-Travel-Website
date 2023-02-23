@@ -73,6 +73,14 @@
       "PackagePath": "staticwebassets\\Images\\backgroundplanes-tr.png"
     },
     {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\companylogo.png",
+      "PackagePath": "staticwebassets\\Images\\companylogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\instagram-icon.png",
+      "PackagePath": "staticwebassets\\Images\\instagram-icon.png"
+    },
+    {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\login-img.jpg",
       "PackagePath": "staticwebassets\\Images\\login-img.jpg"
     },
@@ -91,6 +99,18 @@
     {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\review-image3.png",
       "PackagePath": "staticwebassets\\Images\\review-image3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\twitter-icon.png",
+      "PackagePath": "staticwebassets\\Images\\twitter-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\youtube-icon.png",
+      "PackagePath": "staticwebassets\\Images\\youtube-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\css\\IdentityStyles.css",
+      "PackagePath": "staticwebassets\\css\\IdentityStyles.css"
     },
     {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\css\\site.css",

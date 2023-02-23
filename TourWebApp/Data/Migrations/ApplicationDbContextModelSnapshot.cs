@@ -167,8 +167,8 @@ namespace TourWebApp.Data.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
+                    b.Property<long>("Age")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -213,14 +213,11 @@ namespace TourWebApp.Data.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("TotalSpent")
-                        .HasColumnType("real");
+                    b.Property<long?>("TotalTripsTaken")
+                        .HasColumnType("bigint");
 
-                    b.Property<int>("TotalTripsTaken")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TripsPending")
-                        .HasColumnType("int");
+                    b.Property<long?>("TripsPending")
+                        .HasColumnType("bigint");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
@@ -267,7 +264,6 @@ namespace TourWebApp.Data.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<string>("HotelBooked")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Indiviual")

@@ -7,66 +7,77 @@
 @*<h1>@ViewData["Title"]</h1>
 *@
 
-<div class="register-flex">
-    <div class="">
-        <h1>Sign Up</h1>
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <br />
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="">
-                <label class="register-labels" asp-for="Input.Email"></label>
-                <input  asp-for="Input.Email" class="register-input" autocomplete="username" aria-required="true" />
-                <br />
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="">
-                <label class="register-labels" asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="register-input" autocomplete="new-password" aria-required="true" />
-                <br />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="">
-                <label class="register-labels" asp-for="Input.ConfirmPassword"></label>
-                <input placeholder="Confirm Password" asp-for="Input.ConfirmPassword" class="register-input" autocomplete="new-password" aria-required="true" />
-                <br />
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button class="signup-btn" id="registerSubmit" type="submit" class="">Sign Up</button>
-        </form>
-    </div>
-    <div @*class="col-md-6 col-md-offset-2"*@>
-        <section>
-@*            <h3>Use another service to register.</h3>
-            <hr />
-*@            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form class="registration" id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins)
-                                {
-                                    <button type="submit" class="google-log-in" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account"><i class="bi bi-google"></i>Sign in with @provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
-</div>
+<html>
+    <head>
+    <link rel="stylesheet" href="~/css/IdentityStyles.css" asp-append-version="true" />
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+    </head>
+    <body>
+    <div class="register-flex">
+ 
+            <h1>Sign Up</h1>
+            <form id="registerForm" class="form-reg" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h2>Create a new account.</h2>
+                <br />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-section">
+                    <label class="register-labels" asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="register-input" autocomplete="username" aria-required="true" />
+                    <br />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-section">
+                    <label class="register-labels" asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="register-input" autocomplete="new-password" aria-required="true" />
+                    <br />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-section">
+                    <label class="register-labels" asp-for="Input.ConfirmPassword"></label>
+                    <input placeholder="Confirm Password" asp-for="Input.ConfirmPassword" class="register-input" autocomplete="new-password" aria-required="true" />
+                    <br />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <button class="signup-btn" id="registerSubmit" type="submit" >Sign Up</button>
+            </form>
+            <div class="external" @*class="col-md-6 col-md-offset-2"*@>
+                <section>
+                    @*            <h3>Use another service to register.</h3>
+                    <hr />
+                    *@            @{
+                        if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                        {
+                            <div>
+                                <p>
+                                    There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">
+                                        article
+                                        about setting up this ASP.NET application to support logging in via external services
+                                    </a>.
+                                </p>
+                            </div>
+                        }
+                        else
+                        {
+                            <form class="registration" id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                <div>
+                                    <p>
+                                        @foreach (var provider in Model.ExternalLogins)
+                                        {
+                                            <button type="submit" class="google-log-in" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account"><i class="bi bi-google"></i>Sign in with @provider.DisplayName</button>
+                                        }
+                                    </p>
+                                </div>
+                            </form>
+                        }
+                    }
+                </section>
+            </div>
+        
+        
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+    </body>
+</html>
