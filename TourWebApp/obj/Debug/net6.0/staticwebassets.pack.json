@@ -77,6 +77,18 @@
       "PackagePath": "staticwebassets\\Images\\companylogo.png"
     },
     {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dashboard_img1.svg",
+      "PackagePath": "staticwebassets\\Images\\dashboard_img1.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dashboard_img2.svg",
+      "PackagePath": "staticwebassets\\Images\\dashboard_img2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dashboard_img3.svg",
+      "PackagePath": "staticwebassets\\Images\\dashboard_img3.svg"
+    },
+    {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\instagram-icon.png",
       "PackagePath": "staticwebassets\\Images\\instagram-icon.png"
     },

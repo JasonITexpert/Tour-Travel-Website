@@ -291,7 +291,7 @@ namespace TourWebApp.Data.Migrations
 
                     b.HasIndex("TripsApplicationUserId");
 
-                    b.ToTable("Bookings");
+                    b.ToTable("Bookings", (string)null);
                 });
 
             modelBuilder.Entity("TourWebApp.Models.Trips", b =>
@@ -310,7 +310,7 @@ namespace TourWebApp.Data.Migrations
 
                     b.HasIndex("ApplicationUserId1");
 
-                    b.ToTable("Trips");
+                    b.ToTable("Trips", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

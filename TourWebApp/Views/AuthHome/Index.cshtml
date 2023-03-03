@@ -1,7 +1,62 @@
-﻿@*
+﻿@model ApplicationUser
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
 
-<h1>You are an authorized user</h1>
+<body>
+    <div class="dashboard">
+        <div class="dash-sec1 dash-link">
+            <div class="">
+                <img src="~/Images/companylogo.png" />
+            </div>
+            <div class="links dash-link">
+                <div ><a><i class="bi bi-house"></i>Dashboard</a></div>
+                <div>
+                    <a><i class="bi bi-ticket"></i>My Tickets</a>
+                </div>
+                <div >
+                    <a><i class="bi bi-heart"></i>Favoite</a>
+                </div>
+                <div>
+                    <a><i class="bi bi-credit-card"></i>Transaction</a>
+                </div>
+                <div>
+                    <a><i class="bi bi-gear"></i>Setting</a>
+                </div>
+                
+            </div>
+            <div>
+                <a><i class="bi bi-box-arrow-right"></i>Logout</a>
+            </div>
+        </div>
+        <div class="dash-sec2">
+            <div class="dash-top">
+                <div>
+                <h5>Hello, </h5>
+                <p>Welcome back and explore the world</p>
+            </div>
+            <div class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input placeholder="Search Definition..." />
+                                <i class="bi bi-bell"></i>
+            </div>
+            </div>
+            <div class="dashboard-trips">
+                <div class="trip-1">
+                </div>
+                <div class="trip-2"></div>
+                <div class="trip-3"></div>
+            </div>
+        </div>
+        <div class="dash-sec3">
+        </div>
+    </div>
+</body>
+
+<script>
+    function preventBack(){window.History.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload = function(){null};
+</script>

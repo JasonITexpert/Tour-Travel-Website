@@ -188,7 +188,6 @@ a {
 
 .body{
         font-family: 'Poppins', sans-serif;
-        
 }
 
 .external{
@@ -204,4 +203,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
 }
