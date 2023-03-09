@@ -31,7 +31,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 /*CSS RESET*/
 * {
@@ -804,13 +807,14 @@ footer {
     column-gap: 1rem;
     grid-template-rows: 100%;
     padding: 1rem;
+    font-family: 'Lato', sans-serif;
 }
 
 .dash-sec1 {
     border: 5px;
     white-space: nowrap;
     font-size: 1.5rem;
-    margin: auto;
+    margin: ;
     color: #7D7D7D;
     display: flex;
     flex-direction: column;
@@ -827,8 +831,10 @@ footer {
 
 .dash-sec2 {
     background-color: #DAE8DA;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 2rem;
+    display: grid;
+    row-gap: 1rem;
 }
 
 .dash-top {
@@ -851,6 +857,10 @@ footer {
         font-size: 0.8rem;
     }
 
+    .dash-sec2 input:focus{
+        border: 1px solid lightgray;
+    }
+
 .dash-sec3 {
     background-color: lightgray;
 }
@@ -860,6 +870,18 @@ footer {
 .dash-link a {
     display: flex;
     gap: 2rem;
+    padding: 0.5rem;
+}
+
+dash-link-child{
+
+}
+
+.dash-link-child:hover {
+    background-color: #4E944F;
+    color: #fff;
+    gap: 2rem;
+    
 }
 
 .search-box {
@@ -876,7 +898,7 @@ footer {
         
         position: absolute;
         top:-2px;
-        left: 260px;
+        left: 230px;
         background-color: #fff;
         padding: 7px;
         border-radius: 50%;
@@ -888,30 +910,118 @@ footer {
         column-gap: 2rem;
     }
 
-.trip-1{
-    background-image: url(/Images/dashboard_img1.svg);
-    background-size: contain;
+
+.trip {
+    height: 217px;
+    width: 10rem;
     background-repeat: no-repeat;
-    height: 20rem;
-    width: 13rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*    padding: 10.5rem 0.4rem 0.3rem 0.4rem;
+*/ border-radius: 1rem;
 }
 
+    .trip h5{
+        font-size: 1rem;
+    }
+
+    .trip p{
+        font-size: 0.5rem;
+    }
+
+    .trip-1 {
+        background-image: url(/Images/dash-trip1.svg);
+    }
+
 .trip-2 {
-    background-image: url(/Images/dashboard_img2.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 20rem;
-    width: 13rem;
+    background-image: url(/Images/dash-trip2.svg);    
 }
 
 .trip-3 {
-    background-image: url(/Images/dashboard_img3.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 20rem;
-    width: 13rem;
+    background-image: url(/Images/dash-trip3.svg);
 }
 
-    
+.destination {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-rows: 100% 100% 100%;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 2rem;
+    align-items: center;
 
-        
+}
+
+.destinations {
+    background-color: #FAFAFA;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-template-rows: repeat(3, 50rem);
+    
+}
+
+
+
+.destination span{
+    font-weight: 700;
+}
+
+.destination-caption {
+    color: #7D7D7D;
+    display: flex;
+    gap: 3rem;
+}
+
+.destination-filter {
+    padding: 0.2rem;
+    width: 5rem;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+    .destination-filter i{
+        margin-inline: 4px;
+    }
+
+    .destinations .head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.dash-bottom{
+    background-image: url(/Images/dashboard_bottom-img.svg);
+    background-size: cover;
+    height: 14.5rem;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.dash-bottom p{
+    font-weight: 300;
+}
+
+.trip-info {
+    background-color: hsla(0, 0%, 0%, 0.185);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #D0D0D0;
+    text-shadow: 4px 4px 5px #000;
+    padding: 1px 5px;
+    margin-top: 10rem;
+    width: 10rem;
+}
+
+.trip-info div{
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    margin-inline: 4px;
+}

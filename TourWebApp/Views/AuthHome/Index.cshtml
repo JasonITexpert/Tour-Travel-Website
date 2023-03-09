@@ -1,4 +1,7 @@
 ﻿@model ApplicationUser
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -12,42 +15,126 @@
                 <img src="~/Images/companylogo.png" />
             </div>
             <div class="links dash-link">
-                <div ><a><i class="bi bi-house"></i>Dashboard</a></div>
-                <div>
+                <div class="dash-link-child"><a><i class="bi bi-house"></i>Dashboard</a></div>
+                <div class="dash-link-child">
                     <a><i class="bi bi-ticket"></i>My Tickets</a>
                 </div>
-                <div >
+                <div class="dash-link-child">
                     <a><i class="bi bi-heart"></i>Favoite</a>
                 </div>
-                <div>
+                <div class="dash-link-child">
                     <a><i class="bi bi-credit-card"></i>Transaction</a>
                 </div>
-                <div>
+                <div class="dash-link-child">
                     <a><i class="bi bi-gear"></i>Setting</a>
                 </div>
-                
+
             </div>
-            <div>
+            <div class="dash-link-child">
                 <a><i class="bi bi-box-arrow-right"></i>Logout</a>
             </div>
         </div>
         <div class="dash-sec2">
             <div class="dash-top">
                 <div>
-                <h5>Hello, </h5>
-                <p>Welcome back and explore the world</p>
-            </div>
-            <div class="search-box">
+                    <h5>Hello, @User.Identity?.Name</h5>
+                    <p>Welcome back and explore the world</p>
+                </div>
+                <div class="search-box">
                     <i class="bi bi-search"></i>
                     <input placeholder="Search Definition..." />
-                                <i class="bi bi-bell"></i>
-            </div>
+                    <i class="bi bi-bell"></i>
+                </div>
             </div>
             <div class="dashboard-trips">
-                <div class="trip-1">
+                <div class="trip trip-1">
+                    <div class="trip-info">
+                        <h5>Horseshoe</h5>
+                        <div>
+                            <p><i class="bi bi-geo-alt"></i>United States</p>
+                            <p><i class="bi bi-star"></i>4.9</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="trip-2"></div>
-                <div class="trip-3"></div>
+                <div class="trip trip-2">
+                    <div class="trip-info">
+                        <h5>Horseshoe</h5>
+                        <div>
+                            <p><i class="bi bi-geo-alt"></i>United States</p>
+                            <p><i class="bi bi-star"></i>4.9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip trip-3">
+                    <div class="trip-info">
+                        <h5>Horseshoe</h5>
+                        <div>
+                            <p><i class="bi bi-geo-alt"></i>United States</p>
+                            <p><i class="bi bi-star"></i>4.9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="destinations">
+                <div class="head">
+                    <h5>Best Destination</h5>
+                    <button class="destination-filter"><i class="bi bi-funnel"></i>Filters</button>
+                </div>
+                <p>3 destinations found</p>
+                <div class="destination">
+                    <div>
+                        <img src="/Images/destination_1.svg" alt="destination picture"/>
+                    </div>
+                    <div>
+                        <h6>Guttanen</h6>
+                        <div class="destination-caption">
+                        <p>Switzerland</p>
+                        4.8
+                    </div>
+                    </div>
+                    
+                    <div>
+                        <span>$100</span>/day
+                    </div>
+                </div>
+                <div class="destination">
+                    <div>
+                        <img src="/Images/destination_2.svg" alt="destination picture"/>
+                    </div>
+                    <div>
+                        <h6>Guttanen</h6>
+                        <div class="destination-caption">
+                        <p>Switzerland</p>
+                         4.8
+                    </div>
+                    </div>
+                    <div>
+                        <span>$100</span>/day
+                    </div>
+                </div>
+                <div class="destination">
+                    <div>
+                        <img src="/Images/destination_3.svg" alt="destination picture"/>
+                    </div>
+                    <div>
+                        <h6>Guttanen</h6>
+                        <div class="destination-caption">
+                        <p>Switzerland</p>
+                        4.8
+                    </div>
+                    </div>
+                    
+                    <div>
+                        <span>$100</span>/day
+                    </div>
+                </div>
+            </div>
+            <div class="dash-bottom whiten">
+                <h5>
+                    Promo 50% off
+                </h5>
+                <h5 c>Let's Explore the world</h5>
+                <p class="">Get special offers and news</p>
             </div>
         </div>
         <div class="dash-sec3">
@@ -56,7 +143,7 @@
 </body>
 
 <script>
-    function preventBack(){window.History.forward();}
+    function preventBack() { window.History.forward(); }
     setTimeout("preventBack()", 0);
-    window.onunload = function(){null};
+    window.onunload = function () { null };
 </script>

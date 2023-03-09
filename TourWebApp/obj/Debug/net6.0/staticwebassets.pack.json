@@ -77,16 +77,32 @@
       "PackagePath": "staticwebassets\\Images\\companylogo.png"
     },
     {
-      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dashboard_img1.svg",
-      "PackagePath": "staticwebassets\\Images\\dashboard_img1.svg"
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dash-trip1.svg",
+      "PackagePath": "staticwebassets\\Images\\dash-trip1.svg"
     },
     {
-      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dashboard_img2.svg",
-      "PackagePath": "staticwebassets\\Images\\dashboard_img2.svg"
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dash-trip2.svg",
+      "PackagePath": "staticwebassets\\Images\\dash-trip2.svg"
     },
     {
-      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dashboard_img3.svg",
-      "PackagePath": "staticwebassets\\Images\\dashboard_img3.svg"
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dash-trip3.svg",
+      "PackagePath": "staticwebassets\\Images\\dash-trip3.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\dashboard_bottom-img.svg",
+      "PackagePath": "staticwebassets\\Images\\dashboard_bottom-img.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\destination_1.svg",
+      "PackagePath": "staticwebassets\\Images\\destination_1.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\destination_2.svg",
+      "PackagePath": "staticwebassets\\Images\\destination_2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\destination_3.svg",
+      "PackagePath": "staticwebassets\\Images\\destination_3.svg"
     },
     {
       "Id": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\Tour-Travel-Website\\TourWebApp\\wwwroot\\Images\\instagram-icon.png",

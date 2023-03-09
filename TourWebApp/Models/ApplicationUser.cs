@@ -16,6 +16,6 @@ namespace TourWebApp.Models
         public uint? TripsPending { get; set; }
         [DisplayName("Total Trips Taken")]
         public uint? TotalTripsTaken { get; set; }
-        
+        public List<Booking> Booings { get; set; }
     }
 }

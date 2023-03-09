@@ -6,36 +6,22 @@ namespace TourWebApp.Models
 {
     public class Booking
     {
-        public enum Package
-        {
-            Individual, Family, Couple
-        }
-
-
-        [Key]
         [DisplayName("Booking ID")]
-        public Guid BookingId { get; set; }
-        public Guid ApplicationUserId { get; set; }
-
-        [Required]
+        public new Guid BookingId { get; set; } = new Guid();
         public string Origin { get; set; }
-        [DisplayName("StartDate")]
         public DateTime StartDate { get; set; }
-        [DisplayName("End Date")]
-        public DateTime EndDate { get; set; }
-        [DisplayName("Day Booked")]
+        public DateTime EndTime { get; set; }
         public DateTime DayBooked { get; set; } = DateTime.Now;
-        public bool Indiviual { get; set; }
-        [DisplayName("Group Size")]
-        public uint Groupsize { get; set; }
-        [Required]
-        public Package Packages { get; set; }  
-        [DisplayName("Hotel Booked")]
-        public string? HotelBooked { get; set; }
-        [DisplayName("TotalBill")]
+        public bool Individual { get; set; }
+        public uint GroupSize { get; set; }
+        public bool HotelProvided { get; set; }
+        public string? HotelName { get; set; }
         public float TotalBill { get; set; }
         public bool Cancelled { get; set; }
+       
         public ApplicationUser ApplicationUser { get; set; }
+        public Guid UserId { get; set; }
+        public Trip Trip { get; set; }
 
 
     }
